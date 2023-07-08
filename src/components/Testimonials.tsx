@@ -1,11 +1,12 @@
 import React from "react";
+import Image from "next/image";
+
 import { Box, Typography } from "@mui/material";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
-import Image from "next/image";
 
 const Testimonials = () => {
   return (
@@ -13,6 +14,7 @@ const Testimonials = () => {
       <Box
         sx={{
           width: "80%",
+          maxWidth: "1280px",
           margin: "0 auto",
           padding: "4rem 0",
           display: "flex",
@@ -21,10 +23,23 @@ const Testimonials = () => {
         }}
       >
         <Swiper
-          slidesPerView={3}
           spaceBetween={30}
           pagination={{
             clickable: true,
+          }}
+          breakpoints={{
+            0: {
+              slidesPerView: 1,
+              spaceBetween: 10,
+            },
+            600: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            900: {
+              slidesPerView: 3,
+              spaceBetween: 30,
+            },
           }}
           modules={[Pagination]}
           style={{ width: "100%", height: "100%", padding: "3rem 0" }}

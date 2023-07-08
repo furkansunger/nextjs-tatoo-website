@@ -7,6 +7,7 @@ const Welcome = () => {
       <Box
         sx={{
           width: "80%",
+          maxWidth: "1280px",
           margin: "0 auto",
           padding: "4rem 0",
           display: "flex",
@@ -21,7 +22,7 @@ const Welcome = () => {
         >
           Welcome
         </Typography>
-        <Box sx={{ width: "50%" }}>
+        <Box sx={{ width: { xs: "100%", sm: "50%" } }}>
           <Typography
             variant="body2"
             color="white"

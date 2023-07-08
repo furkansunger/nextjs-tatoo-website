@@ -28,7 +28,14 @@ const Header = () => {
       }}
     >
       <Box>
-        <Typography variant="h1" sx={{ color: "orange", marginBottom: "1rem" }}>
+        <Typography
+          variant="h1"
+          sx={{
+            color: "orange",
+            marginBottom: "1rem",
+            fontSize: { xs: "5rem", sm: "6rem" },
+          }}
+        >
           DeepInk
         </Typography>
         <Typography variant="h3" sx={{ color: "#ccc" }}>

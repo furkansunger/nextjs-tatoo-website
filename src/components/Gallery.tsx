@@ -8,6 +8,7 @@ const Gallery = () => {
       <Box
         sx={{
           width: "80%",
+          maxWidth: "1280px",
           margin: "0 auto",
           padding: "4rem 0",
           display: "flex",
@@ -23,7 +24,11 @@ const Gallery = () => {
           sx={{
             width: "100%",
             display: "grid",
-            gridTemplateColumns: "repeat(3, 1fr)",
+            gridTemplateColumns: {
+              xs: "repeat(1, 1fr)",
+              sm: "repeat(2, 1fr)",
+              md: "repeat(3, 1fr)",
+            },
             gap: "1rem",
           }}
         >
@@ -38,7 +43,7 @@ const Gallery = () => {
             <Box
               sx={{
                 position: "relative",
-                width: "320px",
+                width: "100%",
                 height: "320px",
               }}
             >
@@ -46,6 +51,7 @@ const Gallery = () => {
                 src="/assets/services-1.jpg"
                 alt=""
                 fill={true}
+                sizes="100vw"
                 style={{ borderRadius: "1.5rem", objectFit: "cover" }}
               />
             </Box>
@@ -61,7 +67,7 @@ const Gallery = () => {
             <Box
               sx={{
                 position: "relative",
-                width: "320px",
+                width: "100%",
                 height: "320px",
               }}
             >
@@ -69,6 +75,7 @@ const Gallery = () => {
                 src="/assets/services-1.jpg"
                 alt=""
                 fill={true}
+                sizes="100vw"
                 style={{ borderRadius: "1.5rem", objectFit: "cover" }}
               />
             </Box>
@@ -84,7 +91,7 @@ const Gallery = () => {
             <Box
               sx={{
                 position: "relative",
-                width: "320px",
+                width: "100%",
                 height: "320px",
               }}
             >
@@ -92,6 +99,7 @@ const Gallery = () => {
                 src="/assets/services-1.jpg"
                 alt=""
                 fill={true}
+                sizes="100vw"
                 style={{ borderRadius: "1.5rem", objectFit: "cover" }}
               />
             </Box>
@@ -107,7 +115,7 @@ const Gallery = () => {
             <Box
               sx={{
                 position: "relative",
-                width: "320px",
+                width: "100%",
                 height: "320px",
               }}
             >
@@ -115,6 +123,7 @@ const Gallery = () => {
                 src="/assets/services-1.jpg"
                 alt=""
                 fill={true}
+                sizes="100vw"
                 style={{ borderRadius: "1.5rem", objectFit: "cover" }}
               />
             </Box>
@@ -130,7 +139,7 @@ const Gallery = () => {
             <Box
               sx={{
                 position: "relative",
-                width: "320px",
+                width: "100%",
                 height: "320px",
               }}
             >
@@ -138,6 +147,7 @@ const Gallery = () => {
                 src="/assets/services-1.jpg"
                 alt=""
                 fill={true}
+                sizes="100vw"
                 style={{ borderRadius: "1.5rem", objectFit: "cover" }}
               />
             </Box>
@@ -153,7 +163,7 @@ const Gallery = () => {
             <Box
               sx={{
                 position: "relative",
-                width: "320px",
+                width: "100%",
                 height: "320px",
               }}
             >
@@ -161,6 +171,7 @@ const Gallery = () => {
                 src="/assets/services-1.jpg"
                 alt=""
                 fill={true}
+                sizes="100vw"
                 style={{ borderRadius: "1.5rem", objectFit: "cover" }}
               />
             </Box>

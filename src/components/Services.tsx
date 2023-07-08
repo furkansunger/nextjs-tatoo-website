@@ -8,6 +8,7 @@ const Services = () => {
       <Box
         sx={{
           width: "80%",
+          maxWidth: "1280px",
           margin: "0 auto",
           padding: "4rem 0",
           display: "flex",
@@ -20,7 +21,7 @@ const Services = () => {
           sx={{
             width: "100%",
             display: "grid",
-            gridTemplateColumns: "repeat(2, 1fr)",
+            gridTemplateColumns: { xs: "repeat(1, 1fr)", sm: "repeat(2, 1fr)" },
             gap: "1rem",
           }}
         >
@@ -49,14 +50,14 @@ const Services = () => {
             sx={{
               display: "flex",
               alignItems: "center",
-              justifyContent: "flex-end",
+              justifyContent: { xs: "center", sm: "flex-end" },
             }}
           >
             <Box
               sx={{
                 position: "relative",
-                width: "360px",
-                height: "480px",
+                width: { xs: "240px", sm: "360px" },
+                height: { xs: "360px", sm: "480px" },
                 "&:hover img": {
                   scale: "1.01",
                   transition: "0.3s ease-in-out",
@@ -67,6 +68,7 @@ const Services = () => {
                 src="/assets/services-1.jpg"
                 alt=""
                 fill={true}
+                sizes="100vw"
                 style={{ borderRadius: "1.5rem" }}
               />
             </Box>
@@ -77,7 +79,7 @@ const Services = () => {
           sx={{
             width: "100%",
             display: "grid",
-            gridTemplateColumns: "repeat(2, 1fr)",
+            gridTemplateColumns: { xs: "repeat(1, 1fr)", sm: "repeat(2, 1fr)" },
             gap: "1rem",
           }}
         >
@@ -86,14 +88,15 @@ const Services = () => {
             sx={{
               display: "flex",
               alignItems: "center",
-              justifyContent: "flex-start",
+              justifyContent: { xs: "center", sm: "flex-start" },
+              order: {xs: "1", sm: "-1"}
             }}
           >
             <Box
               sx={{
                 position: "relative",
-                width: "360px",
-                height: "480px",
+                width: { xs: "240px", sm: "360px" },
+                height: { xs: "360px", sm: "480px" },
                 "&:hover img": {
                   scale: "1.01",
                   transition: "0.3s ease-in-out",
@@ -104,6 +107,7 @@ const Services = () => {
                 src="/assets/services-2.jpg"
                 alt=""
                 fill={true}
+                sizes="100vw"
                 style={{ borderRadius: "1.5rem" }}
               />
             </Box>
@@ -115,6 +119,7 @@ const Services = () => {
               flexDirection: "column",
               alignItems: "flex-start",
               justifyContent: "center",
+              order: {xs: "-1", sm: "1"}
             }}
           >
             <Typography

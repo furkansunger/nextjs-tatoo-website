@@ -1,5 +1,5 @@
-import { Box, Button, TextField, Typography } from "@mui/material";
 import React from "react";
+import { Box, Button, TextField, Typography } from "@mui/material";
 
 const Subscribe = () => {
   return (
@@ -7,6 +7,7 @@ const Subscribe = () => {
       <Box
         sx={{
           width: "80%",
+          maxWidth: "1280px",
           margin: "0 auto",
           padding: "4rem 0",
           display: "flex",
@@ -19,6 +20,7 @@ const Subscribe = () => {
           color="orange"
           textAlign="center"
           fontWeight="bold"
+          sx={{ fontSize: { xs: "1.5rem", sm: "3rem" } }}
         >
           Subscribe and Get the Latest Tattoo News & Trends
         </Typography>
