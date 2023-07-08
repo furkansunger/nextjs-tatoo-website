@@ -3,6 +3,13 @@ import { Box, Button, Typography } from "@mui/material";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 
 const Header = () => {
+  const scrollDown = () => {
+    window.scrollTo({
+      top: document.documentElement.clientHeight,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <Box
       component="header"
@@ -13,7 +20,10 @@ const Header = () => {
         alignContent: "center",
         position: "relative",
         textAlign: "center",
-        background: "black",
+        background:
+          "linear-gradient(to bottom, rgba(256, 256, 256, 0), rgba(0, 0, 0, 1)), url('/assets/header.jpg')",
+        backgroundPosition: "center",
+        backgroundSize: "cover",
         padding: "2rem 0",
       }}
     >
@@ -39,6 +49,7 @@ const Header = () => {
         <Button
           variant="outlined"
           color="inherit"
+          onClick={scrollDown}
           sx={{
             width: "4rem",
             height: "4rem",

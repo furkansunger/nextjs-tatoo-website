@@ -1,8 +1,16 @@
-"use client"
+"use client";
 
-import React from 'react'
-import { Box } from '@mui/material'
-import { Gallery, Header, Services, Welcome } from '@/components'
+import React from "react";
+import { Box } from "@mui/material";
+import {
+  Footer,
+  Gallery,
+  Header,
+  Services,
+  Subscribe,
+  Testimonials,
+  Welcome,
+} from "@/components";
 
 const Home = () => {
   return (
@@ -11,8 +19,11 @@ const Home = () => {
       <Welcome />
       <Services />
       <Gallery />
+      <Testimonials />
+      <Subscribe />
+      <Footer />
     </Box>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
